@@ -1,58 +1,60 @@
 package main
 
-import "fmt"
-
 func main() {
+	// sequential - conditional	- iterative
+	// for init; condition; post {}
+	// for condition {}
+	// for {}
+	// for key, value := range collection {}
 
-	/* 	for i := 0; i <= 10; i += 5 {
-		fmt.Println(i)
-	} */
+	/*
+		for <init statement>; <condition>; <post statement> {
+			// body of for
+		}
+	*/
 
-	// for <init statement>; <condition>; <post statement> { ----- }
+	// for i := 0; i < 5; i++ {
+	// 	fmt.Println(i)
+	// }
 
-	/* 	i := 0
+	/*	Without shadowing
+		i := 0
 
-	   	for ; i <= 10; i += 5 {
-	   		fmt.Println(i)
-	   	}
-
-	   	fmt.Println(i) */
-
-	/* 	for {  // Infinite Loop
-		fmt.Println("Benim Adım Arin")
-	} */
-
-	/* 	for i := 0; true; i += 5 {
-		fmt.Println(i)
-	} */
-
-	/* 	for i := 0; false; i += 5 {
-		fmt.Println(i)
-	} */
-
-	/* 	i := 10
-
-	   	for i >= 0 {
-	   		fmt.Println(i)
-	   		i--
-	   	} */
-
-	/* 	for i := 0; i <= 10; i++ { // continue --> döngünün başına git
-
-		if i%3 == 0 {
-			continue
+		for i < 5 {
+			fmt.Println(i)
+			i++
 		}
 
-		fmt.Println(i)
-	} */
+		for ; i < 5; i++ {
+			fmt.Println(i)
+		}
 
-	for i := 0; i <= 10; i++ {
+		fmt.Println("done: ", i)
+	*/
 
-		if i == 3 {
+	/*	Break and Continue
+		for {
+			fmt.Println("loop")
 			break
 		}
 
-		fmt.Println(i)
-	} // break --> döngüden çık
+		for n := 0; n <= 20; n++ {
+			if n%3 == 0 {
+				continue
+			}
+			fmt.Println(n)
+		}
 
+		for i := 0; i < 50; i++ {
+			if i == 33 {
+				break
+			}
+
+			if i%2 == 0 {
+				fmt.Println(i, "is even")
+			} else {
+				fmt.Println(i, "is odd")
+			}
+		}
+	*/
 }
