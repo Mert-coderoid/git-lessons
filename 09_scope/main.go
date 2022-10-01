@@ -4,8 +4,11 @@ import (
 	"fmt"
 )
 
-// packVar := "I am a package variable"		// non-declaration statement outside function body  -> tr : fonksiyon dışında tanımlama ifadesi olamaz
+// packVar := "I am a package variable"		// non-declaration statement outside function body  -> 	tr : fonksiyon dışında tanımlama ifadesi olamaz
 var packVar = "I am a package variable"
+
+// tr: eger degiskenleri fonksiyon disinda tanimlarsak, o degisken program calıstıgı sürece hafızada yer kaplar.
+// en: if we declare variables outside the function, the variable occupies memory as long as the program is running.
 
 func main() {
 
