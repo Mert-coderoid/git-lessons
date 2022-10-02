@@ -93,9 +93,7 @@ func main() {
 package main
 
 import (
-	"bufio"
 	"fmt"
-	"os"
 )
 
 func main() {
@@ -106,10 +104,17 @@ func main() {
 	// var moment time.Time = time.Now() // Now ---> method
 	// fmt.Println(moment)
 
-	fmt.Print("Lütfen Sınav Sonucunuzu Giriniz: ")
-	reader := bufio.NewReader(os.Stdin)
-	value, _ := reader.ReadString('\n') // _ blank identifier
-	fmt.Print(value)
+	// fmt.Print("Lütfen Sınav Sonucunuzu Giriniz: ")
+	// reader := bufio.NewReader(os.Stdin)
+	// value, _ := reader.ReadString('\n') // _ blank identifier
+	// fmt.Print(value)
+
+	result, err := evenNum(2)
+	if err != nil {
+		fmt.Println(err)
+	} else {
+		fmt.Println("Girdiğiniz sayı:", result)
+	}
 
 }
 
